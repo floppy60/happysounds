@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LightingRoundCell" id="KzN-ez-QJF" customClass="RoundTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KzN-ez-QJF" id="oYF-Wn-CH6">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrF-k2-hth">
+                        <rect key="frame" x="64" y="23" width="183" height="54"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3He-uD-3Wt">
+                        <rect key="frame" x="270" y="34" width="31" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="31" id="C8w-A6-cXd"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcZ-6e-wqh">
+                        <rect key="frame" x="25" y="34" width="31" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="31" id="LGj-Fs-6jv"/>
+                        </constraints>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S2A-W9-IKB">
+                        <rect key="frame" x="256" y="21" width="58" height="58"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3He-uD-3Wt" firstAttribute="top" secondItem="AcZ-6e-wqh" secondAttribute="top" id="D9x-bN-yh8"/>
+                    <constraint firstItem="AcZ-6e-wqh" firstAttribute="leading" secondItem="oYF-Wn-CH6" secondAttribute="leadingMargin" constant="17" id="LJa-1O-uot"/>
+                    <constraint firstItem="OrF-k2-hth" firstAttribute="top" secondItem="oYF-Wn-CH6" secondAttribute="topMargin" constant="15" id="N8H-Z9-adp"/>
+                    <constraint firstItem="AcZ-6e-wqh" firstAttribute="top" secondItem="oYF-Wn-CH6" secondAttribute="topMargin" constant="26" id="QcX-8v-mXJ"/>
+                    <constraint firstItem="OrF-k2-hth" firstAttribute="centerY" secondItem="oYF-Wn-CH6" secondAttribute="centerY" id="SYE-As-8Gg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="S2A-W9-IKB" secondAttribute="trailing" constant="-2" id="YBu-QC-kCA"/>
+                    <constraint firstItem="OrF-k2-hth" firstAttribute="leading" secondItem="AcZ-6e-wqh" secondAttribute="trailing" constant="8" symbolic="YES" id="a37-Lh-QaZ"/>
+                    <constraint firstItem="S2A-W9-IKB" firstAttribute="centerX" secondItem="3He-uD-3Wt" secondAttribute="centerX" id="bAT-qS-Z0X"/>
+                    <constraint firstItem="3He-uD-3Wt" firstAttribute="leading" secondItem="OrF-k2-hth" secondAttribute="trailing" constant="23" id="fev-yY-mRx"/>
+                    <constraint firstItem="S2A-W9-IKB" firstAttribute="leading" secondItem="OrF-k2-hth" secondAttribute="trailing" constant="9" id="g2z-1i-w5o"/>
+                    <constraint firstItem="AcZ-6e-wqh" firstAttribute="centerY" secondItem="OrF-k2-hth" secondAttribute="centerY" id="iRR-PX-e5d"/>
+                    <constraint firstItem="S2A-W9-IKB" firstAttribute="top" secondItem="oYF-Wn-CH6" secondAttribute="topMargin" constant="13" id="npc-Wg-Ntz"/>
+                    <constraint firstItem="3He-uD-3Wt" firstAttribute="bottom" secondItem="AcZ-6e-wqh" secondAttribute="bottom" id="tFz-VG-DAX"/>
+                    <constraint firstItem="3He-uD-3Wt" firstAttribute="centerY" secondItem="S2A-W9-IKB" secondAttribute="centerY" id="vQW-Xe-9MA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="checkImage" destination="3He-uD-3Wt" id="gkA-kh-r2i"/>
+                <outlet property="descriptionLabel" destination="OrF-k2-hth" id="oLE-7M-sM5"/>
+                <outlet property="playButton" destination="AcZ-6e-wqh" id="Vbi-Zk-I6S"/>
+                <outlet property="touchImage" destination="S2A-W9-IKB" id="dvt-Ho-bju"/>
+            </connections>
+            <point key="canvasLocation" x="268" y="312.5"/>
+        </tableViewCell>
+    </objects>
+</document>
